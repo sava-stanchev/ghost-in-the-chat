@@ -4,7 +4,7 @@
 
 .chat-wrapper {
   background-color: #343541;
-  flex: 1;
+  flex: 1 1 0%;
 }
 
 .title-container {
@@ -28,4 +28,50 @@
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 2px;
+  border-radius: 0.5rem;
+  background-color: #616161;
+  max-width: 300px;
+  padding: 1rem;
+}
+
+.sidebar {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.yoyo {
+  flex: 1 1 0%;
+}
+
+.new-chat {
+  border-color: rgb(55 65 81);
+  border-width: 1px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: flex;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  color: rgb(209 213 219);
+  transition: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+.new-chat:hover {
+  background-color: #616161;
+}
+
+.plus-icon {
+  height: 1rem;
+  width: 1rem;
 }

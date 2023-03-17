@@ -1,3 +1,4 @@
+import SideBar from '@/components/SideBar';
 import '@/styles/globals.css'
 import "@/styles/style.css"
 
@@ -15,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="page-wrapper">
-          {/* Sidebar */}
+          <SideBar />
           {/* Client Provider - Notification */}
           <div className="chat-wrapper">{children}</div>
         </div>
