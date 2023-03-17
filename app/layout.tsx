@@ -1,6 +1,6 @@
-import SideBar from '@/components/SideBar';
-import '@/styles/globals.css'
-import "@/styles/style.css"
+import SideBar from "@/components/SideBar";
+import "@/styles/globals.css";
+import "@/styles/style.css";
 
 export const metadata = {
   title: "Next.js",
@@ -16,7 +16,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="page-wrapper">
-          <SideBar />
+          <div className="sidebar-wrapper">
+            <SideBar />
+          </div>
           {/* Client Provider - Notification */}
           <div className="chat-wrapper">{children}</div>
         </div>
