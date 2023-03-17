@@ -1,9 +1,10 @@
 function HomePage() {
   return (
-    <div>
-      <h1>Ghost in the Chat</h1>
+    <div className="title-container">
+      <h1 className="title">Ghost in the Chat</h1>
+      <p className="subtitle">The Ghost will answer.</p>
     </div>
-  )
+  );
 }
 
 export default HomePage;
