@@ -55,6 +55,7 @@
   justify-content: center;
   border-radius: 0.5rem;
   padding: 0.75rem 1.25rem;
+  margin-bottom: 10px;
   font-size: 0.875rem;
   line-height: 1.25rem;
   display: flex;
@@ -125,4 +126,37 @@
 
 .sign-out:hover {
   opacity: 0.5;
+}
+
+.chat-bubble {
+  height: 1.25rem;
+  width: 1.25rem;
+  color: rgb(209 213 219);
+}
+
+.trash-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  color: rgb(209 213 219);
+}
+
+.trash-icon:hover {
+  color: rgb(185 28 28);
+}
+
+.chat-row {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.chat-row.active {
+  background-color: #3f3f3f;
+  border-radius: 0.5rem;
+}
+
+.chat-row-name {
+  flex: 1 1 0%;
+  padding: 0px 10px;
+  color: rgb(209 213 219);
 }
