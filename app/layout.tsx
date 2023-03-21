@@ -1,3 +1,4 @@
+import ClientProvider from "@/components/ClientProvider";
 import Login from "@/components/Login";
 import { SessionProvider } from "@/components/SessionProvider";
 import SideBar from "@/components/SideBar";
@@ -29,7 +30,7 @@ export default async function RootLayout({
               <div className="sidebar-wrapper">
                 <SideBar />
               </div>
-              {/* Client Provider - Notification */}
+              <ClientProvider />
               <div className="chat-wrapper">{children}</div>
             </div>
           )}
