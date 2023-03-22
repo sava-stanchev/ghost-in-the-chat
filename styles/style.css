@@ -218,6 +218,36 @@
 
 .chat-container {
   flex: 1 1 0%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.chat-instruction {
+  text-align: center;
+  margin-top: 2.5rem;
+  color: white;
+}
+
+.chat-instruction-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.25rem;
+  color: white;
+  display: flex;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
 .message-wrapper {
