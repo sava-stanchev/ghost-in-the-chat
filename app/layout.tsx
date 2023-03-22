@@ -4,7 +4,6 @@ import { SessionProvider } from "@/components/SessionProvider";
 import SideBar from "@/components/SideBar";
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import "@/styles/globals.css";
-import "@/styles/style.css";
 import { getServerSession } from "next-auth";
 
 export const metadata = {
@@ -26,12 +25,12 @@ export default async function RootLayout({
           {!session ? (
             <Login />
           ) : (
-            <div className="page-wrapper">
-              <div className="sidebar-wrapper">
+            <div className="flex">
+              <div className="bg-[#202123] max-w-xs h-screen overflow-y-auto md:min-w-[20rem]">
                 <SideBar />
               </div>
               <ClientProvider />
-              <div className="chat-wrapper">{children}</div>
+              <div className="bg-[#343541] flex-1">{children}</div>
             </div>
           )}
         </SessionProvider>

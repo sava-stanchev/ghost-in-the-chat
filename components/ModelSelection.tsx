@@ -12,8 +12,9 @@ function ModelSelection() {
   });
 
   return (
-    <div>
+    <div className="mt-2">
       <Select
+        className="mt-2"
         instanceId="model-selector"
         defaultValue={model}
         options={models?.modelOptions}

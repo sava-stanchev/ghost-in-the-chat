@@ -73,11 +73,11 @@ function ChatInput({ chatId }: Props) {
   };
 
   return (
-    <div className="chat-input-container">
-      <form onSubmit={sendMessage} className="chat-input-form">
+    <div className="bg-gray-700/50 text-white rounded-lg text-sm">
+      <form onSubmit={sendMessage} className="p-5 space-x-5 flex">
         <input
           value={prompt}
-          className="chat-input"
+          className="bg-transparent focus:outline-none flex-1 disabled:cursor-not-allowed disabled:text-gray-300"
           onChange={(e) => setPrompt(e.target.value)}
           type="text"
           placeholder="Type your message here..."
@@ -86,12 +86,12 @@ function ChatInput({ chatId }: Props) {
         <button
           disabled={!prompt || !session}
           type="submit"
-          className="chat-input-button"
+          className="bg-[#11A37F] hover:opacity-50 text-white font-bold px-4 py-2 rounded disabled:bg-gray-300 disabled:cursor-not-allowed"
         >
-          <PaperAirplaneIcon className="chat-input-button-icon" />
+          <PaperAirplaneIcon className="h-4 w-4 -rotate-45" />
         </button>
       </form>
-      <div>
+      <div className="md:hidden">
         <ModelSelection />
       </div>
     </div>

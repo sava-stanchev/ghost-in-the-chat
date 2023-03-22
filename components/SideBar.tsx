@@ -19,37 +19,35 @@ function SideBar() {
   );
 
   return (
-    <div className="sidebar-container">
-      <div className="sidebar">
+    <div className="p-2 flex flex-col h-screen">
+      <div className="flex-1">
         <div>
           <NewChat />
-
-          <div className="model-selector">
+          <div className="hidden sm:inline">
             <ModelSelection />
           </div>
-
-          {loading && (
-            <div className="loading-chats">
-              <p>Loading Chats...</p>
-            </div>
-          )}
-
-          {/* Map through the ChatRows */}
-          {chats?.docs.map((chat) => (
-            <ChatRow key={chat.id} id={chat.id} />
-          ))}
+          <div className="flex flex-col space-y-2 my-2">
+            {loading && (
+              <div className="animate-pulse text-center text-white">
+                <p>Loading Chats...</p>
+              </div>
+            )}
+            {chats?.docs.map((chat) => (
+              <ChatRow key={chat.id} id={chat.id} />
+            ))}
+          </div>
         </div>
       </div>
-
       {session && (
-        <div className="sign-out">
+        <div className="flex flex-col w-fit mx-auto items-center cursor-pointer hover:opacity-50">
           <img
-            onClick={() => signOut()}
             src={session.user?.image!}
             alt="profile pic"
-            className="profile-pic"
+            className="h-12 w-12 rounded-full mb-2"
           />
-          <p>Sign Out</p>
+          <p className="text-white" onClick={() => signOut()}>
+            Sign Out
+          </p>
         </div>
       )}
     </div>

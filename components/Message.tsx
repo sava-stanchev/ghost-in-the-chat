@@ -8,10 +8,10 @@ function Message({ message }: Props) {
   const isGhost = message.user.name === "Ghost";
 
   return (
-    <div className={`message-wrapper ${isGhost && 'ghost'}`}>
-      <div className="message-container">
-        <img src={message.user.avatar} alt="" className="message-image" />
-        <p className="message-text">{message.text}</p>
+    <div className={`py-5 text-white ${isGhost && "bg-[#434654]"}`}>
+      <div className="flex space-x-5 px-10 max-w-2xl mx-auto">
+        <img src={message.user.avatar} alt="" className="h-8 w-8" />
+        <p className="pt-1 text-sm">{message.text}</p>
       </div>
     </div>
   );
