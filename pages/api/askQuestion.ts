@@ -33,7 +33,7 @@ export default async function handler(
       _id: "Ghost",
       name: "Ghost",
       avatar:
-        "https://images.unsplash.com/photo-1606522109608-e5b0c3166605?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3OTQxODM5Nw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080",
+        "https://images.unsplash.com/photo-1603751901720-b0a1fe00c9e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3MzkxMzQ0MA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080",
     },
   };
 
