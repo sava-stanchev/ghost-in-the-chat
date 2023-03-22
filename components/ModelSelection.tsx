@@ -14,7 +14,6 @@ function ModelSelection() {
   return (
     <div>
       <Select
-        className="model-selector"
         instanceId="model-selector"
         defaultValue={model}
         options={models?.modelOptions}

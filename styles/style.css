@@ -284,4 +284,11 @@
 
 .model-selector {
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.loading-chats {
+  text-align: center;
+  color: white;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }

@@ -24,9 +24,15 @@ function SideBar() {
         <div>
           <NewChat />
 
-          <div>
+          <div className="model-selector">
             <ModelSelection />
           </div>
+
+          {loading && (
+            <div className="loading-chats">
+              <p>Loading Chats...</p>
+            </div>
+          )}
 
           {/* Map through the ChatRows */}
           {chats?.docs.map((chat) => (
